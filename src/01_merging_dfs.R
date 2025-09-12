@@ -1,0 +1,6 @@
+library(dplyr)
+setwd("C:/Users/")
+t1<-read.table("Filename.csv", sep="\t", header=TRUE)
+t2<-read.table("Filename.csv", sep="\t", header=TRUE)
+t3<-merge (t1, t2, by="Order")
+write.table(t3,"t4.csv",sep=",",quote=FALSE, row.names=FALSE)
