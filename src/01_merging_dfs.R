@@ -4,8 +4,8 @@ setwd("C:/Users/")  # Set wd here
 library(dplyr)
 
 # Reading csv files
-t1 <- read.table("table_1.csv", sep= "\t", header= TRUE)
-t2 <- read.table("table_2.csv", sep= "\t", header= TRUE)
+t1 <- read.table("table_1.tsv", sep= "\t", header= TRUE)
+t2 <- read.table("table_2.tsv", sep= "\t", header= TRUE)
 
 # Merging dataframes
 t3 <- merge (t1, t2, by= "Order")
