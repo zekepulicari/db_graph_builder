@@ -6,9 +6,9 @@ library(Hmisc)
 library(reshape)
 
 # Reading csv file
-FQ_enzim_agras_hong_func_CLASIF <- read.delim("final_table.csv", row.names= 1)
+FQ_enzim_agras_hong_func_CLASIF <- read.delim("./data", row.names= 1)
 
-# Subset the df
+# Subset the df by treatment
 tabAN <- FQ_enzim_agras_hong_func_CLASIF[(35:50), ]
 tabAN <- as.matrix(tabAN)
 
