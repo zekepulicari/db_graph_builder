@@ -34,4 +34,4 @@ corr.imp.7.nNA <- corr.imp.7[complete.cases(corr.imp.7), ]
 fix(corr.imp.7.nNA)
 
 # Writing to csv file
-write.table(corr.imp.7.nNA, "correlation_07.csv", row.names=FALSE,sep="\t", quote=FALSE)
+write.table(corr.imp.7.nNA, "FQ_enzim_agras_hong_func_CLASIF_AN(Filtro_0,7).csv", row.names=FALSE,sep=",", quote=FALSE)
