@@ -7,7 +7,7 @@ This repository is dedicated to the documentation and collection of scripts for 
 - Cytoscape
 
 ## Install environment
-conda create -n graph_env -c conda-forge notebook pandas numpy matplotlib scikit-learn anaconda::ipykernel 
+`conda create -n graph_env -c conda-forge notebook pandas numpy matplotlib scikit-learn anaconda::ipykernel`
 
 #### Add the conda environment as a kernel
 `python -m ipykernel install --user --name graph_env --display-name "Python (graph_env)"`
