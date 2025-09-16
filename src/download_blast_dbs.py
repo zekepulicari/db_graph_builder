@@ -44,7 +44,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-o", "--outdir",
         default="./dbs",
-        help="Output directory for databases (default: ~/ncbi/blast/db)"
+        help="Output directory for databases (default: ./dbs)"
     )
 
     args = parser.parse_args()
