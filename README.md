@@ -14,7 +14,7 @@ This repository is dedicated to the documentation and collection of scripts for 
 
 ## Inputs
 This project used three main sources of information:
-- NCBI DataBase
+- NCBI DataBase: 16S_ribosomal_RNA (in this case)
 - MiDAS DataBase
 - BIOSPAS Consortium Data
 
