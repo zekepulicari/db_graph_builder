@@ -18,5 +18,10 @@ This project used three main sources of information:
 - MiDAS DataBase
 - BIOSPAS Consortium Data
 
+### To obtain the NCBI Database, run:
+To see the list of databases:, run `python download_blast_dbs.py`
+
+To download the desired list, run `python src/download_blast_dbs.py -d 16S_ribosomal_RNA` and will stored them in `db_graph_builder/src/dbs` by default.
+
 # Objective: Identify patterns through co-occurrence graphs to determine the effect of agricultural practices on the interactions between soil microorganisms 
 <img width="1270" height="1287" alt="image" src="https://github.com/user-attachments/assets/80530fba-5bd4-4fc5-be3d-803c96426c1d" />
