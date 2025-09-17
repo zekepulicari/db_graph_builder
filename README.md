@@ -33,5 +33,5 @@ Use `wget https://www.midasfieldguide.org/files/downloads/taxonomies/QIIME.txt%2
 4. Run `02_corr_analysis.R` using the `./inputs/FQ_enzim_agras_hong_func_CLASIF` file to obtain the different correlation values. **I also prepared the outputs and they are named like this `FQ_enzim_agras_hong_func_CLASIF_{treatment_name}(Filtro_0,7)`.**
 5. Use Cytoscape to build the graphs using the co-ocurrence information. 
 
-# Now, we can go after our objective using the Cytoscape tool: Identify patterns through co-occurrence graphs to determine the effect of agricultural practices on the interactions between soil microorganisms 
+### Now, we can go after our objective using the Cytoscape tool: Identify patterns through co-occurrence graphs to determine the effect of agricultural practices on the interactions between soil microorganisms 
 <img width="1270" height="1287" alt="image" src="https://github.com/user-attachments/assets/80530fba-5bd4-4fc5-be3d-803c96426c1d" />
