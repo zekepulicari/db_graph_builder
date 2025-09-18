@@ -36,7 +36,7 @@ Use `wget https://www.midasfieldguide.org/files/downloads/taxonomies/QIIME.txt%2
 ### Now, we can go after our objective using the Cytoscape tool: Identify patterns through co-occurrence graphs to determine the effect of agricultural practices on the interactions between soil microorganisms 
 <img width="1270" height="1287" alt="image" src="https://github.com/user-attachments/assets/80530fba-5bd4-4fc5-be3d-803c96426c1d" />
 
-## Cytoscape provides information about topological features of the graphs. You can download that information and run the statistical tests using the `06_topological_analysis.ipynb` script. **I prepared three topological outputs and they are saved in the `outputs/` folder.**
+#### Cytoscape provides information about topological features of the graphs. You can download that information and run the statistical tests using the `06_topological_analysis.ipynb` script. **I prepared three topological outputs and they are saved in the `outputs/` folder.**
 
 | Feature                   | Test            | Statistic | p-value  |
 |----------------------------|----------------|-----------|----------|
