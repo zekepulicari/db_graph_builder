@@ -6,7 +6,7 @@ This repository is dedicated to the documentation and collection of scripts for 
 - Cytoscape: to build graphs
 
 ### Install environment
-`conda create -n graph_env -c conda-forge -c anaconda -c bioconda  notebook pandas numpy matplotlib scikit-learn ipykernel r-base samtools entrez-direct blast`
+`conda create -n graph_env -c conda-forge -c anaconda -c bioconda  notebook pandas numpy matplotlib seaborn scikit-posthocs scikit-learn ipykernel statsmodels r-base samtools entrez-direct blast`
 
 #### Add the conda environment as a kernel
 `python -m ipykernel install --user --name graph_env --display-name "Python (graph_env)"`
@@ -35,3 +35,13 @@ Use `wget https://www.midasfieldguide.org/files/downloads/taxonomies/QIIME.txt%2
 
 ### Now, we can go after our objective using the Cytoscape tool: Identify patterns through co-occurrence graphs to determine the effect of agricultural practices on the interactions between soil microorganisms 
 <img width="1270" height="1287" alt="image" src="https://github.com/user-attachments/assets/80530fba-5bd4-4fc5-be3d-803c96426c1d" />
+
+## Cytoscape provides information about topological features of the graphs. You can download that information and run the statistical tests using the `06_topological_analysis.ipynb` script. **I prepared three topological outputs and they are saved in the `outputs/` folder.**
+
+| Feature                   | Test            | Statistic | p-value  |
+|----------------------------|----------------|-----------|----------|
+| Neighborhood Connectivity  | Kruskal–Wallis | 1.300022  | 0.522040 |
+| Closeness Centrality       | Kruskal–Wallis | 15.735507 | 0.000383 |
+| Clustering Coefficient     | Kruskal–Wallis | 6.551141  | 0.037795 |
+
+We compared the distribution of three network topological metrics across treatments (AN, BP, MP). To determine if treatments showed significant differences, we first checked normality and variance homogeneity. Since assumptions were not fully met, we used the Kruskal–Wallis test (non-parametric alternative to ANOVA).
